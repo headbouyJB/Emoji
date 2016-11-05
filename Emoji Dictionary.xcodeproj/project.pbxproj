@@ -12,6 +12,7 @@
 		8C12F2891DCD523700F97FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C12F2871DCD523700F97FF2 /* Main.storyboard */; };
 		8C12F28B1DCD523700F97FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C12F28A1DCD523700F97FF2 /* Assets.xcassets */; };
 		8C12F28E1DCD523700F97FF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C12F28C1DCD523700F97FF2 /* LaunchScreen.storyboard */; };
+		8C12F2961DCD602800F97FF2 /* definitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C12F2951DCD602800F97FF2 /* definitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8C12F28A1DCD523700F97FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C12F28D1DCD523700F97FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C12F28F1DCD523700F97FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C12F2951DCD602800F97FF2 /* definitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = definitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				8C12F2831DCD523700F97FF2 /* AppDelegate.swift */,
 				8C12F2851DCD523700F97FF2 /* ViewController.swift */,
+				8C12F2951DCD602800F97FF2 /* definitionViewController.swift */,
 				8C12F2871DCD523700F97FF2 /* Main.storyboard */,
 				8C12F28A1DCD523700F97FF2 /* Assets.xcassets */,
 				8C12F28C1DCD523700F97FF2 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C12F2961DCD602800F97FF2 /* definitionViewController.swift in Sources */,
 				8C12F2861DCD523700F97FF2 /* ViewController.swift in Sources */,
 				8C12F2841DCD523700F97FF2 /* AppDelegate.swift in Sources */,
 			);
