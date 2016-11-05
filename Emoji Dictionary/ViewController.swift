@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var tableFull: UITableView!
     
-    var emojis = ["😀","😍","😱","💩","😈","🐼","🐳"]
+    var emojis : [Emoji] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         tableFull.dataSource = self
         tableFull.delegate = self
+        emojis = makeEmojiArray()
         
     }
     
@@ -30,7 +31,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(indexPath.row)
         let cell = UITableViewCell()
-        cell.textLabel?.text = emojis[indexPath.row]
+        let emoji = emojis[indexPath.row]
+        print(emoji.stringEmoji)
+        cell.textLabel?.text = emoji.stringEmoji
         return cell
     }
     
@@ -40,10 +43,45 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         performSegue(withIdentifier: "moveSegue", sender: emoji)
     }
     
+    func makeEmojiArray() -> [Emoji] {
+        let emoji1 = Emoji()
+        emoji1.stringEmoji = "😀"
+        emoji1.definition = "Happy Face"
+        emoji1.birthYear = 2014
+        emoji1.category = "Smiley Face"
+        
+        let emoji2 = Emoji()
+        emoji2.stringEmoji = "💩"
+        emoji2.definition = "Poo Face"
+        emoji2.birthYear = 2012
+        emoji2.category = "Smiley Face"
+        
+        let emoji3 = Emoji()
+        emoji3.stringEmoji = "🐳"
+        emoji3.definition = "Whale Spout"
+        emoji3.birthYear = 2017
+        emoji3.category = "Animals"
+        
+        let emoji4 = Emoji()
+        emoji4.stringEmoji = "😈"
+        emoji4.definition = "Devil Face"
+        emoji4.birthYear = 2013
+        emoji4.category = "Evil Emoji"
+        
+        let emoji5 = Emoji()
+        emoji5.stringEmoji = "🐼"
+        emoji5.definition = "Panda Face"
+        emoji5.birthYear = 2015
+        emoji5.category = "Animals"
+        
+        return [emoji1, emoji2, emoji3, emoji4, emoji5]
+        
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print(sender)
         let desVC = segue.destination as! definitionViewController
-        desVC.emoji = sender as! String
+        desVC.emoji = sender as! Emoji
     }
 
     override func didReceiveMemoryWarning() {

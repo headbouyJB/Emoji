@@ -69,24 +69,42 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a lovely church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDE-f9-4OV">
+                                <rect key="frame" x="103" y="399" width="169" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjg-ie-j3n">
                                 <rect key="frame" x="79" y="89" width="218" height="239"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a lovely church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcn-mM-VdG">
+                                <rect key="frame" x="103" y="445" width="169" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="UDE-f9-4OV" firstAttribute="top" secondItem="n8C-Hn-oz6" secondAttribute="bottom" constant="25" id="3va-0x-kIE"/>
                             <constraint firstItem="n8C-Hn-oz6" firstAttribute="centerX" secondItem="VHk-ZK-U26" secondAttribute="centerX" id="K26-iG-zB0"/>
                             <constraint firstItem="Xjg-ie-j3n" firstAttribute="centerX" secondItem="VHk-ZK-U26" secondAttribute="centerX" id="LaJ-a0-zVD"/>
                             <constraint firstItem="Xjg-ie-j3n" firstAttribute="top" secondItem="fh0-Ud-B8J" secondAttribute="bottom" constant="25" id="UEg-Oh-xJd"/>
+                            <constraint firstItem="kcn-mM-VdG" firstAttribute="centerX" secondItem="VHk-ZK-U26" secondAttribute="centerX" id="b0f-zT-17Z"/>
                             <constraint firstItem="EP4-AO-j3S" firstAttribute="top" secondItem="VHk-ZK-U26" secondAttribute="topMargin" constant="-85" id="h14-HK-Vtg"/>
                             <constraint firstItem="n8C-Hn-oz6" firstAttribute="top" secondItem="Xjg-ie-j3n" secondAttribute="bottom" constant="25" id="kAW-gv-7av"/>
+                            <constraint firstItem="UDE-f9-4OV" firstAttribute="centerX" secondItem="VHk-ZK-U26" secondAttribute="centerX" id="otM-ag-He9"/>
                             <constraint firstItem="EP4-AO-j3S" firstAttribute="leading" secondItem="VHk-ZK-U26" secondAttribute="leading" constant="-100" id="vUG-E7-kUD"/>
+                            <constraint firstItem="kcn-mM-VdG" firstAttribute="top" secondItem="UDE-f9-4OV" secondAttribute="bottom" constant="25" id="yET-dE-UgE"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="age" destination="kcn-mM-VdG" id="obX-Ut-Vcz"/>
+                        <outlet property="category" destination="UDE-f9-4OV" id="Fee-sP-HFr"/>
                         <outlet property="emojiDefinition" destination="n8C-Hn-oz6" id="dzv-aA-bf0"/>
                         <outlet property="emojiLabel" destination="Xjg-ie-j3n" id="Gcm-QD-Wdr"/>
                     </connections>
